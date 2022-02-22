@@ -1,0 +1,39 @@
+.carousel
+    padding: 81px 0
+    &__inner
+        position: relative
+        max-width: 715px
+        margin: 0 auto
+    .slick-prev, .slick-next
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: -66px
+        border: none
+        background-color: #fff
+        img
+            width: 29px
+            height: 50px
+    .slick-next
+        right: -66px
+        left: auto
+    .slick-dots
+        padding: 0 0 0 0
+        text-align: center
+        display: flex // поставить кнопки в ряд
+        justify-content: center // выровнять по центру
+        list-style: none // убираем черные маркер
+        margin-top: 5px
+    .slick-dots button
+        background: #eddfd477 // цвет фона
+        border: none // без рамки
+        border-radius: 50% // радиус закругления
+        height: 15px // высота точки
+        width: 15px // ширина точки
+        margin: 2px // отступы между точками
+        outline: none // убираем обводку
+        font-size: 0
+    .slick-dots li[class="slick-active"] button
+        background: $red-color
+        color: #fff
+           
