@@ -137,4 +137,6 @@ $(document).ready(function () {
         $("html, body").animate({ scrollTop: 0 }, 900);
         return false;
     });
+
+    new WOW().init();
 });
